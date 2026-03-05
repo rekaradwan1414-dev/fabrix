@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FABRIX | Clothing Brand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #111;
+        }
+
+        /* Navbar */
+        header {
+            background: #000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url(images/WhatsApp\ Image\ 2026-02-13\ at\ 3.30.11\ AM.jpeg) center/cover ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            border: none;
+            background: #fff;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #ddd;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 50px;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .product {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .product h4 {
+            margin: 15px 0 5px;
+        }
+
+        .product span {
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* About */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Contact */
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 12px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>FABRIX</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+        <div>
+            <h2>FABRIX Clothing</h2>
+            <p>Modern Style. Strong Identity.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <section id="products">
+        <h3>Our Products</h3>
+        <div class="products">
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.10 AM.jpeg" alt="">
+                <h4>Hoddie</h4>
+                <span>600 EGP</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.13 AM (1).jpeg
+                ">
+                <h4>Hoodie</h4>
+                <span>600 EGP</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/images2.png">
+                <h4>Hoodie</h4>
+                <span>600EGP</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.13 AM.jpeg" alt="">
+                <h4>Hoodie</h4>
+                <span>600EGP</span>
+                <button>add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.14 AM.jpeg" alt="">
+                <h4>Hoodie</h4>
+                <span>550EGP</span>
+                <button>add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.15 AM.jpeg" alt="">
+                <h4>Hoodie</h4>
+                <span>550EGP</span>
+                <button>add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.06 AM.jpeg" alt="">
+                <h4>Hoodie</h4>
+                <span>550EGP</span>
+                <button>add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/WhatsApp Image 2026-02-13 at 3.30.11 AM.jpeg" alt="">
+                <h4>Hoodie</h4>
+                <span>550EGP</span>
+                <button>add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h3>About FABRIX</h3>
+        <div class="about">
+            <p>
+                FABRIX is a contemporary fashion brand dedicated to redefining everyday style through quality, comfort, and modern design. Founded with a passion for creativity and craftsmanship, Fabrics blends timeless aesthetics with current trends to create versatile pieces for confident individuals.
+
+Our brand focuses on premium materials, precise tailoring, and attention to detail. Each collection is thoughtfully designed to reflect elegance, functionality, and individuality. From casual wear to statement pieces, Fabrics ensures that every garment delivers both style and comfort.
+
+At FABRIX, we believe clothing is more than just fashion — it is a form of self-expression. Our mission is to empower people to feel confident, authentic, and comfortable in what they wear.
+
+Vision:
+To become a leading fashion brand recognized for quality, innovation, and sustainable practices.
+
+Mission:
+To design high-quality, stylish, and affordable clothing that meets the needs of modern lifestyles.
+
+Core Values:
+
+Quality & Craftsmanship
+
+Innovation & Creativity
+
+Sustainability & Responsibility
+
+Customer Satisfaction
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 FABRIX. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
